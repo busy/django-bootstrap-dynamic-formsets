@@ -10,7 +10,7 @@ setup(
     name='django-bootstrap-dynamic-formsets',
     version='0.5.0',
     packages=['django_bootstrap_dynamic_formsets','django_bootstrap_dynamic_formsets.templatetags'],
-    install_requires=['Django','django-bootstrap3',],
+    install_requires=['Django','django-bootstrap4',],
     include_package_data=True,
     license='MIT License',
     description='JavaScript-enhanced dynamic formsets using Bootstrap',
