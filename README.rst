@@ -4,7 +4,7 @@ Dynamic Formsets for Django with Bootstrap
 Requirements:
 -------------
 
--  **django-bootstrap3**
+-  **django-bootstrap4**
 -  **jQuery**
 -  **jQuery UI**
 
@@ -18,7 +18,7 @@ Usage:
 
 -  Add django\_bootstrap\_dynamic\_formsets to Applications in your
    **settings.py**. If you haven't done so already, add
-   django-bootstrap3 as well.
+   django-bootstrap4 as well.
 
 -  Create a regular model, form and formset. If you need dynamic order
    functionality, in the ``fields`` parameter of the formset factory, do
