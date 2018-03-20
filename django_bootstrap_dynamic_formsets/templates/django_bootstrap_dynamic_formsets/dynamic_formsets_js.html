@@ -147,8 +147,8 @@
 
         // Add form
         $(document).on('click', '.add-form{% if formset.prefix %}-{{formset.prefix}}{% endif %}', function () {
-            var maxNumForms = $('#id_{% if formset.prefix %}{{formset.prefix}}-{% endif %}MAX_NUM_FORMS').val();
-            var totalForms = $('#id_{% if formset.prefix %}{{formset.prefix}}-{% endif %}TOTAL_FORMS').val();
+            var maxNumForms = parseInt($('#id_{% if formset.prefix %}{{formset.prefix}}-{% endif %}MAX_NUM_FORMS').val());
+            var totalForms = parseInt($('#id_{% if formset.prefix %}{{formset.prefix}}-{% endif %}TOTAL_FORMS').val());
             if (totalForms < maxNumForms){
                 var formCopy = $emptyForm.clone();
                 var formCopyString = formCopy.html().replace(/__prefix__/g, "" + sortItemCounter);
